@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: linear-gradient(to right top, #e5ff00, #73ff00);
+  background-image: linear-gradient(to right top, #b0e4eb, #778af7);
   background-repeat: no-repeat;
   background-size: 100%;
   height: 100vw;
@@ -55,6 +55,7 @@ button {
   border-radius: 5px;
   margin: 1 rem;
   cursor: pointer;
+  pointer-events: none;
 }
 
 #overlay {
@@ -89,6 +90,10 @@ button {
 
 #result {
   font-size: 2rem;
+}
+
+#stop {
+  display: none;
 }
 /* 
 button {

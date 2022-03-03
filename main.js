@@ -4,6 +4,7 @@ const overlay = document.querySelector("#overlay");
 const closeButton = document.querySelector("#close");
 const circles = document.querySelectorAll(".circle");
 const scoreText = document.querySelector("#score");
+const resultText = document.querySelector("#result");
 
 let active = 0;
 let score = 0;
@@ -35,7 +36,12 @@ const clickedCircle = (i) => {
 };
 
 const startGame = () => {
-  console.log("game started");
+  startButton.style.display = "none";
+  endButton.style.display = "inline";
+
+  for (let i = 0; i < circles.length; i++) {
+    circles[i].style.pointerEvents = "auto";
+  }
 
   let nextActive = pickNew(active);
 
@@ -45,7 +51,9 @@ const startGame = () => {
   active = nextActive;
   console.log("active circle:", active);
   timer = setTimeout(startGame, pace);
-  pace = pace - 5;
+  pace = pace - 10;
+
+  rounds++;
 
   function pickNew(active) {
     let nextActive = getRndInt(0, 3);
