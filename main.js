@@ -9,6 +9,8 @@ const resultText = document.querySelector("#result");
 let active = 0;
 let score = 0;
 let pace = 3000;
+let rounds = -1;
+// let rounds = 0;
 let timer;
 
 // let container = document.querySelector(".circles");
@@ -31,11 +33,15 @@ const clickedCircle = (i) => {
     endGame();
   } else {
     score++;
+    rounds--;
+
     scoreText.textContent = score;
   }
 };
 
 const startGame = () => {
+  console.log("game started");
+
   startButton.style.display = "none";
   endButton.style.display = "inline";
 
@@ -53,7 +59,11 @@ const startGame = () => {
   timer = setTimeout(startGame, pace);
   pace = pace - 10;
 
+  if (rounds >= 1) {
+    endGame();
+  }
   rounds++;
+  console.log("rounds", rounds);
 
   function pickNew(active) {
     let nextActive = getRndInt(0, 3);

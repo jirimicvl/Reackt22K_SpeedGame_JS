@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: linear-gradient(to right top, #b0e4eb, #778af7);
+  background-image: linear-gradient(to right top, #e5ff00, #73ff00);
   background-repeat: no-repeat;
   background-size: 100%;
   height: 100vw;
@@ -40,6 +40,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  pointer-events: none;
 }
 
 .circle.active {
@@ -55,7 +56,6 @@ button {
   border-radius: 5px;
   margin: 1 rem;
   cursor: pointer;
-  pointer-events: none;
 }
 
 #overlay {
@@ -95,11 +95,11 @@ button {
 #stop {
   display: none;
 }
+
 /* 
 button {
   font-family: "Shizuru", cursive;
 }
-
 .dot1 {
   height: 100px;
   width: 100px;
@@ -107,7 +107,6 @@ button {
   border-radius: 50%;
   display: inline-block;
 }
-
 .dot2 {
   height: 100px;
   width: 100px;
@@ -115,7 +114,6 @@ button {
   border-radius: 50%;
   display: inline-block;
 }
-
 .dot3 {
   height: 100px;
   width: 100px;
@@ -123,7 +121,6 @@ button {
   border-radius: 50%;
   display: inline-block;
 }
-
 .dot4 {
   height: 100px;
   width: 100px;
