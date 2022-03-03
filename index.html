@@ -17,16 +17,39 @@
     <link rel="stylesheet" href="style.css" />
     <title>PikaGames!</title>
   </head>
-  <header>
+  <!-- <header>
     <h1>Speed Game!:)</h1>
-  </header>
+  </header> -->
   <body>
-    <h2>Final Score:0</h2>
-    <span class="dot1"></span>
-    <span class="dot2"></span>
-    <span class="dot3"></span>
-    <span class="dot4"></span>
-    <button type="button">Start Game</button>
-    <button type="button">End Game</button>
+    <section>
+      <h1>Speed Game!</h1>
+      <div class="gamearea">
+        <h2>Your score is: <span id="score">0</span></h2>
+        <div class="circles">
+          <div class="circle">1</div>
+          <div class="circle">2</div>
+          <div class="circle">3</div>
+          <div class="circle">4</div>
+        </div>
+        <button type="button" id="start">Start game</button>
+        <button type="button" id="stop">Stop game</button>
+      </div>
+    </section>
+    <section id="overlay">
+      <div class="modal">
+        <p>Oops, game over :/</p>
+        <p id="result">Blah blah</p>
+        <button type="button" id="close">close</button>
+      </div>
+    </section>
   </body>
 </html>
+
+<!-- 
+<h2>Final Score:0</h2>
+<span class="dot1"></span>
+<span class="dot2"></span>
+<span class="dot3"></span>
+<span class="dot4"></span>
+<button type="button">Start Game</button>
+<button type="button">End Game</button> -->

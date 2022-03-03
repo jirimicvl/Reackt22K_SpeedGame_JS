@@ -3,13 +3,91 @@
 }
 
 body {
-  background-image: linear-gradient(#e5ff00, #73ff00);
+  background-image: linear-gradient(to right top, #e5ff00, #73ff00);
   background-repeat: no-repeat;
   background-size: 100%;
   height: 100vw;
   font-family: "Fira Sans Condensed", sans-serif;
+  background-attachment: fixed;
+  text-align: center;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
+#score {
+  font-size: 2rem;
+}
+
+.circles {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  text-align: center;
+  width: 800px;
+  justify-content: space-between;
+}
+
+.circle {
+  height: 150px;
+  width: 150px;
+  background-color: lightgray;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 1rem;
+  cursor: pointer;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: lemonchiffon;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  margin: 1 rem;
+  cursor: pointer;
+}
+
+#overlay {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  padding: 2rem;
+  width: 40%;
+  height: 25%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.modal button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: transparent;
+}
+
+#result {
+  font-size: 2rem;
+}
+/* 
 button {
   font-family: "Shizuru", cursive;
 }
@@ -17,7 +95,7 @@ button {
 .dot1 {
   height: 100px;
   width: 100px;
-  background-color: #bbb;
+  background-color: rgb(212, 17, 17);
   border-radius: 50%;
   display: inline-block;
 }
@@ -25,7 +103,7 @@ button {
 .dot2 {
   height: 100px;
   width: 100px;
-  background-color: #bbb;
+  background-color: rgb(65, 187, 41);
   border-radius: 50%;
   display: inline-block;
 }
@@ -33,7 +111,7 @@ button {
 .dot3 {
   height: 100px;
   width: 100px;
-  background-color: #bbb;
+  background-color: rgb(61, 31, 168);
   border-radius: 50%;
   display: inline-block;
 }
@@ -41,7 +119,7 @@ button {
 .dot4 {
   height: 100px;
   width: 100px;
-  background-color: #bbb;
+  background-color: rgb(168, 32, 134);
   border-radius: 50%;
   display: inline-block;
-}
+} */
