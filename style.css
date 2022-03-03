@@ -37,10 +37,13 @@ h1 {
   display: inline-block;
   margin: 1rem;
   cursor: pointer;
-  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.circle.active {
+  background-color: yellow;
 }
 
 button {
