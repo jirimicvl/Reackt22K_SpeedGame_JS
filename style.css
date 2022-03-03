@@ -1,3 +1,44 @@
 * {
   background-color: yellowgreen;
+  /* font-family: "Shizuru", cursive; */
+}
+
+body {
+  font-family: "Shizuru", cursive;
+}
+
+button {
+  font-family: "Shizuru", cursive;
+}
+
+.dot1 {
+  height: 100px;
+  width: 100px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot2 {
+  height: 100px;
+  width: 100px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot3 {
+  height: 100px;
+  width: 100px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot4 {
+  height: 100px;
+  width: 100px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
 }
