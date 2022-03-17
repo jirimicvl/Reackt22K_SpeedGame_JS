@@ -96,8 +96,8 @@ const endGame = () => {
   } else if (score <= 50 ) {
   commentResult.textContent = `Really really good!`;
   } else if (score <= 100 ) {
-    commentResult.textContent = `Time to sign you up for olympics!`;
-    } 
+  commentResult.textContent = `Time to sign you up for olympics!`;
+  } 
 
 
 };
