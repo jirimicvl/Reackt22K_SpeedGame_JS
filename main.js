@@ -27,9 +27,8 @@ circles.forEach((circle, i) => {
 
 const clickedCircle = (i) => {
   // i += 1;
-  bump.play();
   console.log("circle was clicked", i);
-
+  bump.play();
 
   if (i !== active) {
     endGame();
@@ -108,6 +107,10 @@ function sound(src) {
   };
 }
 
+// const startGameMusic = () => {
+//       startSound = new sound("sound/arcade.wav");
+//       startSound.play();
+//     };
 
 startButton.addEventListener("click", startGame);
 endButton.addEventListener("click", endGame);
