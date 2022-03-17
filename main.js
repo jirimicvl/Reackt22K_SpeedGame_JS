@@ -64,7 +64,7 @@ const startGame = () => {
   pace = pace - 30;
 
   if (rounds >= 1) {
-    myMusic.pause();
+    // myMusic.pause();
     endGame();
     // myMusic.pause();
   }
@@ -82,12 +82,18 @@ const startGame = () => {
   }
 };
 
+function pauseAudio() {
+  myMusic.pause();
+}
+
 const endGame = () => {
   console.log("game ended");
   clearTimeout(timer);
+  
   overlay.style.visibility = "visible";
   resultText.textContent = `Your Final score was ${score}`;
   if (score <= 5) {
+ 
   commentResult.textContent = `You definitely can do better than this.`;
   } else if (score <= 15 ) {
   commentResult.textContent = `Try harder!`;
