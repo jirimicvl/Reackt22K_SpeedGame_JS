@@ -7,6 +7,7 @@ const scoreText = document.querySelector("#score");
 const resultText = document.querySelector("#result");
 
 let myMusic = new sound("sounds/tetrisPS3.mp3");
+let bump = new sound("sounds/bump.mp3");
 
 let active = 0;
 let score = 0;
@@ -26,7 +27,9 @@ circles.forEach((circle, i) => {
 
 const clickedCircle = (i) => {
   // i += 1;
+  bump.play();
   console.log("circle was clicked", i);
+
 
   if (i !== active) {
     endGame();
@@ -61,9 +64,9 @@ const startGame = () => {
   pace = pace - 30;
 
   if (rounds >= 1) {
-    
-    endGame();
     myMusic.pause();
+    endGame();
+    // myMusic.pause();
   }
   rounds++;
   console.log("rounds", rounds);
@@ -105,10 +108,6 @@ function sound(src) {
   };
 }
 
-// const startGameMusic = () => {
-//       startSound = new sound("sound/arcade.wav");
-//       startSound.play();
-//     };
 
 startButton.addEventListener("click", startGame);
 endButton.addEventListener("click", endGame);
