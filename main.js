@@ -6,6 +6,7 @@ const circles = document.querySelectorAll(".circle");
 const scoreText = document.querySelector("#score");
 const resultText = document.querySelector("#result");
 const commentResult = document.querySelector("#commentResult");
+const mute = document.querySelector("#mute");
 
 let myMusic = new sound("sounds/tetrisPS3.mp3");
 let bump = new sound("sounds/bump.mp3");
@@ -92,7 +93,6 @@ const endGame = () => {
   overlay.style.visibility = "visible";
   resultText.textContent = `Your Final score was ${score}`;
   if (score <= 5) {
- 
   commentResult.textContent = `You definitely can do better than this.`;
   } else if (score <= 15 ) {
   commentResult.textContent = `Try harder!`;
@@ -126,7 +126,20 @@ function sound(src) {
   };
 }
 
+muteFunction = () => {
+  myMusic.muted = false;
+
+  if (myMusic.muted = false) {
+    myMusic.muted = true;
+  } else if (myMusic.muted = true) {
+    myMusic.muted = false;
+  }
+}
+
+
 startButton.addEventListener("click", startGame);
 endButton.addEventListener("click", endGame);
 closeButton.addEventListener("click", reloadGame);
+mute.addEventListener("click", muteFunc);
+
 
