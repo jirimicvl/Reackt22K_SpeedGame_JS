@@ -105,6 +105,11 @@ function sound(src) {
   };
 }
 
+// const startGameMusic = () => {
+//       startSound = new sound("sound/arcade.wav");
+//       startSound.play();
+//     };
+
 startButton.addEventListener("click", startGame);
 endButton.addEventListener("click", endGame);
 closeButton.addEventListener("click", reloadGame);
