@@ -15,15 +15,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>PikaGames!</title>
+    <title>Whack-a-button!</title>
   </head>
-  <!-- <header>
-    <h1>Speed Game!:)</h1>
-  </header> -->
-  <body onclick="startMusic()">
+  
+  <body>
     <section>
-      <h1>Speed Game!</h1>
+      <h1>Whack-a-button!</h1>
       <div class="gamearea">
+        <div>Try to whack the button as much as you can before it moves to the next button. And get try to the highest score!</div>
         <h2>Your score is: <span id="score">0</span></h2>
         <div class="circles">
           <div class="circle">1</div>
@@ -38,17 +37,10 @@
     <section id="overlay">
       <div class="modal">
         <p>Oops, game over :/</p>
-        <p id="result">Testing testing</p>
+        <p id="result">Testing Testing</p>
         <button type="button" id="close">close</button>
       </div>
     </section>
     <script src="main.js"></script>
   </body>
-  <footer>
-    <h4>Rules: If you click the wrong button, game over.</h4>
-    <h4>
-      You have three chances, if you fail to click the yellow button three times
-      than it is game over.
-    </h4>
-  </footer>
 </html>
