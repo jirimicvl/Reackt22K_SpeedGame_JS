@@ -44,7 +44,6 @@ const clickedCircle = (i) => {
 const startGame = () => {
   console.log("game started");
   myMusic.play();
-  
 
   startButton.style.display = "none";
   endButton.style.display = "inline";
@@ -82,7 +81,7 @@ const startGame = () => {
   }
 };
 
-function pauseAudio() {
+pauseAudio = () => {
   myMusic.pause();
 }
 
