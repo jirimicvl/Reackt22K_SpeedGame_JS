@@ -154,7 +154,7 @@ let rounds = -3;
 let timer;
 
 function startMusic() {
-  myMusic = new sound("sound/bubbles.mp3");
+  myMusic = new sound("sound/tetrisPS3.mp3");
   myMusic.play();
 }
 
