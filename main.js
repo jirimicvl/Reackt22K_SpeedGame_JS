@@ -126,13 +126,15 @@ function sound(src) {
   };
 }
 
-muteFunction = () => {
-  myMusic.muted = false;
+myMusic.muted = false;
 
+muteFunc = () => {
   if (myMusic.muted = false) {
     myMusic.muted = true;
+    console.log("MUted");
   } else if (myMusic.muted = true) {
     myMusic.muted = false;
+    console.log("Unmuted");
   }
 }
 
