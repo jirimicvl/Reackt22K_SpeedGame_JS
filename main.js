@@ -95,11 +95,11 @@ const endGame = () => {
   commentResult.textContent = `Quite good!`;
   } else if (score <= 50 ) {
   commentResult.textContent = `Really really good!`;
-  } 
+  } else if (score <= 100 ) {
+    commentResult.textContent = `Time to sign you up for olympics!`;
+    } 
 
-  else {
-  resultText.textContent = `Your Final score was ${score}`;
-  }
+
 };
 
 const reloadGame = () => {
